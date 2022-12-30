@@ -9,6 +9,56 @@ h1 {
   text-align: center;
   margin: 1rem;
 }
+.error {
+  position: relative;
+  position: absolute;
+  display: inline-block;
+  top: 10px;
+  right: 10px;
+  width: 20%;
+  height: auto;
+  background-color: rgb(247, 0, 0);
+  padding: 15px;
+  border: 1px solid rgb(245, 243, 243);
+  border-radius: 10px;
+  margin: 10px auto;
+}
+#errText {
+  padding: 10px;
+  font-size: 0.7rem;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+/* x button */
+.material-symbols-outlined {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 12;
+}
+.x {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+.x:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  transition: all 0.6s ease;
+}
+/* main area */
 .main {
   width: 30%;
   margin: 0 auto;
@@ -41,9 +91,7 @@ h1 {
 }
 .buttons {
   display: inline-block;
-
   text-align: center;
-
   outline: none;
   border: 1px solid rgb(197, 195, 195);
   text-shadow: 0 1px rgba(255, 255, 255, 0.4);
